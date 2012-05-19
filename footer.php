@@ -1,4 +1,14 @@
-<!-- JavaScript at the bottom for fast page loading -->
+</div><!-- #content_container -->
+
+<footer>
+  <div id="foot_container" class="container">
+
+    <?php dynamic_sidebar("Footer"); ?>
+
+  </div><!-- #foot_container -->
+</footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -37,5 +47,13 @@
     })();
   </script>
   <!-- End Social Widget Rendering Javascript /-->
+
+  <script type="text/javascript">
+    jQuery(document).ready( function() {
+      jQuery('.sub-menu').wrap('<div class="dropdown"></div>');
+    } );
+  </script>
+
+  <?php wp_footer(); ?>
 </body>
 </html>

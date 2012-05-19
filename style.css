@@ -26,3 +26,49 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 .wp-caption img { border: 0 none; height: auto; margin:0; max-width: 98.5%; padding:0; width: auto; }
 
 .wp-caption p.wp-caption-text { font-size:11px; line-height:17px; margin:0; padding:0 4px 5px; }
+
+/* Gumby Overrides */
+	/*.navbar li ul.sub-menu {
+		width: auto;
+		min-width: 0px;
+		max-width: 380px;
+		height: 0;
+		position: absolute;
+		background: #fff;
+		overflow: hidden;
+		z-index: 999;
+	}
+	.navbar li:hover ul.sub-menu {
+		min-height: 60px;
+		max-height: 500px;
+		height: auto;
+		padding: 0;
+		border-top: 1px solid #1d692d;
+		
+		-webkit-box-shadow: 0px 3px 4px rgba(0,0,0,.3);
+		-moz-box-shadow: 0px 3px 4px rgba(0,0,0,.3);
+		box-shadow: 0px 3px 4px rgba(0,0,0,.3);
+	
+		-webkit-transition: ease-in-out .2s;
+		-moz-transition: ease-in-out .2s;
+		-o-transition: ease-in-out .2s;
+		-ms-transition: ease-in-out .2s;
+		transition: ease-in-out .2s;
+	}
+	.navbar li ul.sub-menu > li {
+		display: block;
+		width: 100%;
+		float: left;
+		text-align: left;
+		height: auto;
+		font: 16px "Helvetica Neue", arial, sans-serif;
+		border-radius: none;
+	}
+	.navbar li ul.sub-menu > li a {
+		display: block;
+		line-height: 26px;
+		height: 26px;
+		padding: 10px 20px;
+		border-bottom: 1px solid #ddd;
+	} */
+	
