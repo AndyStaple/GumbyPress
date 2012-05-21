@@ -16,10 +16,10 @@ Features
 * Sidebar & Footer Widgetized Areas
 * Use of HTML5's Figure & Figcaption for WP Captions
 * Basic CSS can be used as a minimalistic theme
-* get_template_part functionality (continuing to work on this)
 
 In the Pipeline
 ---
 * Continue to build the theme, of course
+* expand on get_template_part functionality
 * bbPress Compatibility (optional)
 * BuddyPress Compatibility (optional)
