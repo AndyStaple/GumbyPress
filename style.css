@@ -41,3 +41,92 @@ h4 { font-size: 18px; }
 
 /* Unsorted */
 #navigation { margin-top: 20px; margin-bottom: 20px; }
+/** Demo Grid Styles **/
+
+	.demo_grid .column, .demo_grid .columns {
+		background: #5dbb73;
+		-webkit-box-shadow: inset 0 1px 0 #4faa65,
+			inset 0 -1px 0 #4faa65,
+			inset 1px 0 0 #4faa65,
+			inset -1px 0 0 #4faa65
+		;
+		-moz-box-shadow: inset 0 1px 0 #4faa65,
+			inset 0 -1px 0 #4faa65,
+			inset 1px 0 0 #4faa65,
+			inset -1px 0 0 #4faa65
+		;
+		box-shadow: inset 0 1px 0 #4faa65,
+			inset 0 -1px 0 #4faa65,
+			inset 1px 0 0 #4faa65,
+			inset -1px 0 0 #4faa65
+		;
+		-webkit-transition-duration: .3s;
+		-moz-transition-duration: .3s;
+		-o-transition-duration: .3s;
+		-ms-transition-duration: .3s;
+		transition-duration: .3s;
+	}
+	
+	.demo_grid .column:hover, .demo_grid .columns:hover {
+		background: #72dd8d;
+		cursor: pointer;
+		-webkit-transition-duration: .3s;
+		-moz-transition-duration: .3s;
+		-o-transition-duration: .3s;
+		-ms-transition-duration: .3s;
+		transition-duration: .3s;
+	}
+	
+	.demo_grid .row {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	
+	.demo_grid .row.sixteen .row:last-child {
+		margin-bottom: 0;
+	}
+	
+	.demo_grid.small .row {
+		margin-bottom: 15px;
+	}
+	
+	.demo_grid h1, .demo_grid h2 {
+		font: bold italic 220px georgia, times new roman, serif;
+		color: #fbfbfb;
+		letter-spacing: -.09em;
+		text-shadow: 0 10px 0 #000;
+		-webkit-transition-duration: 1s;
+	}
+	
+	.demo_grid h2  {
+		font-size: 21px;
+		text-shadow: 0 4px 0 #000;
+		font-weight: normal;
+		line-height: 1.6;
+	}
+	
+	.demo_grid p {
+		margin-bottom: 0;
+		
+		-webkit-transition-duration: .2s;
+		-moz-transition-duration: .2s;
+		-o-transition-duration: .2s;
+		-ms-transition-duration: .2s;
+		transition-duration: .2s;
+	}
+	
+	.demo_grid.small p {
+		line-height: 30px;
+	}
+	
+	.demo_grid .column:hover p, .demo_grid .columns:hover p {
+		-webkit-transition-duration: .2s;
+		-moz-transition-duration: .2s;
+		-o-transition-duration: .2s;
+		-ms-transition-duration: .2s;
+		transition-duration: .2s;
+	}
+	
+	.demo_grid .special, .demo_grid .special:hover {
+		background: #daf4df;
+	}

@@ -69,7 +69,10 @@
 <header>
   <div id="head_container" class="container">
     <div class="row" id="navigation">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'container' => 'nav', 'container_class' => 'pretty navbar', )); ?>
+      <nav class="pretty navbar">
+        <h1 class="logo"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="GumbyPress" /></a></h1>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'container' => '', 'container_class' => '', )); ?>
+      </nav>
     </div><!-- #navigation
   </div><!-- #head_container -->
 </header>
