@@ -11,4 +11,15 @@ Credits
 
 Features
 ---
-coming soon...
+* Gumby Hybrid Grid (12 and 16 Column Grids)
+* All the other UI elements from the Gumby Framework
+* Sidebar & Footer Widgetized Areas
+* Use of HTML5's Figure & Figcaption for WP Captions
+* Basic CSS can be used as a minimalistic theme
+* get_template_part functionality (continuing to work on this)
+
+In the Pipeline
+---
+* Continue to build the theme, of course
+* bbPress Compatibility (optional)
+* BuddyPress Compatibility (optional)
