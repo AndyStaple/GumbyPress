@@ -6,7 +6,7 @@
 
 			<?php get_template_part( 'loop', 'index' ); ?>
 
-		</div>
+		</article>
 
 	<?php get_sidebar(); ?>
 

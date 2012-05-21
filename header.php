@@ -35,6 +35,16 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script type="text/javascript">
+    jQuery(document).ready( function() {
+      jQuery('.sub-menu').wrap('<div class="dropdown"></div>');
+    } );
+  </script>
+
+
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
   <!-- <link rel="stylesheet" href="css/minified.css"> -->
@@ -46,10 +56,10 @@
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
-  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
-  Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-  For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/gumby.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 

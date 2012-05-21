@@ -7,11 +7,6 @@ register_nav_menus(array(
 	'utility_navigation' => __('Utility Navigation', 'reverie')
 ));	
 
-
-
-
-
-
 // create widget areas: sidebar, footer
 $sidebars = array('Sidebar');
 foreach ($sidebars as $sidebar) {
@@ -30,6 +25,23 @@ foreach ($sidebars as $sidebar) {
 		'before_title' => '<h6><strong>',
 		'after_title' => '</strong></h6>'
 	));
+}
+
+// turns captions into HTML5 validated figure/figcaption structure
+add_filter('img_caption_shortcode', 'orangegnome_img_caption_shortcode_filter',10,3);
+function orangegnome_img_caption_shortcode_filter($val, $attr, $content = null) {
+  extract(shortcode_atts(array(
+  	'id'	=> '',
+  	'align'	=> '',
+  	'width'	=> '',
+  	'caption' => ''
+  ), $attr));
+
+  if ( 1 > (int) $width || empty($caption) )
+  	return $val;
+
+  return '<figure id="' . $id . '" class="wp-caption ' . esc_attr($align) . '" style="width: ' . $width . 'px;">'
+  . do_shortcode( $content ) . '<figcaption class="wp-caption-text">' . $caption . '</figcaption></figure>';
 }
 
 ?>

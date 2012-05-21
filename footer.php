@@ -9,14 +9,6 @@
 </footer>
 
   <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-
-  <script src="js/libs/gumby.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
   <!-- end scripts-->
 
 	
@@ -47,12 +39,6 @@
     })();
   </script>
   <!-- End Social Widget Rendering Javascript /-->
-
-  <script type="text/javascript">
-    jQuery(document).ready( function() {
-      jQuery('.sub-menu').wrap('<div class="dropdown"></div>');
-    } );
-  </script>
 
   <?php wp_footer(); ?>
 </body>

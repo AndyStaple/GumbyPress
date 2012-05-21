@@ -1,7 +1,7 @@
 		<?php /* If there are no posts to display, such as an empty archive page */ ?>
 		<?php if (!have_posts()) : ?>
 			<div class="notice">
-				<p class="bottom"><?php _e('Sorry, no results were found.', 'reverie'); ?></p>
+				<p class="bottom"><?php _e('Sorry, no results were found.'); ?></p>
 			</div>
 			<?php get_search_form(); ?>	
 		<?php endif; ?>
@@ -10,9 +10,9 @@
 		<?php /* Start loop */ ?>
 		<?php while (have_posts()) : the_post(); ?>
 		
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class('row thin line'); ?>>
 				<header>
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					
 				</header>
 				<div class="entry-content">
@@ -25,7 +25,7 @@
 				<footer>
 					<?php $tag = get_the_tags(); if (!$tag) { } else { ?><p><?php the_tags(); ?></p><?php } ?>
 				</footer>
-			</article>	
+			</article><!-- post -->
 
 		<?php endwhile; // End the loop ?>
 
